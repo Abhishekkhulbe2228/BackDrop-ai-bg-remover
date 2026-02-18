@@ -60,3 +60,28 @@ export const plans = [
     popular: false,
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    quote:
+      "Backdrop completely changed our workflow. The AI background removal is insanely accurate and saves us hours every week.",
+    author: "Anthony Walker",
+    handle: "@webarchitect",
+  },
+  {
+    id: 2,
+    quote:
+      "Backdrop is leaps and bounds ahead of the competition. A thousand times better. It simplified our entire creative process.",
+    author: "Sarah Johnson",
+    handle: "@techlead_sarah",
+  },
+  {
+    id: 3,
+    quote:
+      "We were impressed by how well Backdrop handles fine hair and edges without making images look jagged. Truly impressive AI.",
+    author: "Daniel Brooks",
+    handle: "@danieldesigns",
+  },
+];
+
