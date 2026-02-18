@@ -2,7 +2,7 @@ import { testimonials } from "../assets/assets";
 
 const Testimonials = () => {
   return (
-    <div className="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8 py-16">
+    <div className="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8 py-10">
 
       {/* Title */}
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
