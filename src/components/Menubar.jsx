@@ -5,7 +5,7 @@ import { Menu } from "lucide-react";
 const Menubar = () => { 
     const [menuOpen, setMenuOpen] = useState(false);
     return ( 
-        <nav className="bg-white px-8 py-4 flex justify-between items-center shadow-sm sticky top-0 z-50">
+        <nav className="bg-white px-8 py-4 flex justify-between items-center">
             {/* left side : logo + text */}
             <div className="flex items-center space-x-3 group">
                 {/* Your logo image with hover effect */}
