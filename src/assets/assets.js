@@ -33,3 +33,30 @@ export const steps = [
 ];
 
  export const categories = ["People", "Products",  "Animal", "Cars", "Graphics"]
+
+export const plans = [
+  {
+    id: "Basic",
+    name: "Basic Package",
+    price: 499,
+    credits: "100 credits",
+    description: "Best for Personal use",
+    popular: false,
+  },
+  {
+    id: "Premium",
+    name: "Premium Package",
+    price: 899,
+    credits: "250 credits",
+    description: "Best for Business Use.",
+    popular: true,
+  },
+  {
+    id: "Ultimate",
+    name: "Ultiimate Package",
+    price: 1499,
+    credits: "1000 credits",
+    description: "Best for enterprise use.",
+    popular: false,
+  },
+];
