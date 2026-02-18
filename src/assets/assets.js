@@ -1,9 +1,14 @@
 import logo from './logo.png';
 import video_banner from './home-page-banner.mp4'
+import people from './people.png'
+import people_org from './people-org.png'
+
 
 export const assets = { 
     logo,
     video_banner,
+    people,
+    people_org,
 }
 
 export const steps = [
@@ -26,3 +31,5 @@ export const steps = [
       "After selecting a new background color, download your photo instantly. You can also save it in the app by creating an account."
   }
 ];
+
+ export const categories = ["People", "Products",  "Animal", "Cars", "Graphics"]
