@@ -85,3 +85,22 @@ export const testimonials = [
   },
 ];
 
+export const FOOTER_CONSTANTS = [
+   { 
+       url: "https://facebook.com", 
+       logo: "https://img.icons8.com/?size=100&id=13912&format=png&color=000000"
+   },
+   { 
+       url: "https://linkedin.com", 
+       logo: "https://img.icons8.com/?size=100&id=13930&format=png&color=000000"
+   }, 
+   { 
+       url: "https://instagram.com", 
+       logo: "https://img.icons8.com/?size=100&id=32323&format=png&color=000000"
+   }, 
+   { 
+       url: "https://twitter.com", 
+       logo: "https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000"
+   }, 
+]
+

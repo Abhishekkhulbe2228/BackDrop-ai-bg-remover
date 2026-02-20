@@ -1,3 +1,4 @@
+import Footer from "./components/Footer.jsx"
 import Menubar from "./components/Menubar.jsx";
 import Home from "./pages/Home.jsx"
 
@@ -6,6 +7,7 @@ const App = () =>  {
      <div>
           <Menubar />
           <Home />
+          <Footer />
      </div>
   )
 }
