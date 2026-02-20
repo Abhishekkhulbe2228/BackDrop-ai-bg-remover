@@ -1,13 +1,14 @@
 import {useState} from "react";
 import { assets } from "../assets/assets";
 import { Menu } from "lucide-react";
+import {Link} from "react-router-dom"
 
 const Menubar = () => { 
     const [menuOpen, setMenuOpen] = useState(false);
     return ( 
         <nav className="bg-white px-8 py-4 flex justify-between items-center">
             {/* left side : logo + text */}
-            <div className="flex items-center space-x-3 group">
+            <Link className="flex items-center space-x-3 group " to ="/">
                 {/* Your logo image with hover effect */}
                 <img 
                     src={assets.logo} 
@@ -24,7 +25,7 @@ const Menubar = () => {
                         Drop
                     </span>
                 </span>
-            </div>
+            </Link>
             {/* right side : Actions buttons */}
             <div className="hidden md:flex items-center space-x-4">
                 <button className="text-gray-700 hover:text-blue-500 font medium">

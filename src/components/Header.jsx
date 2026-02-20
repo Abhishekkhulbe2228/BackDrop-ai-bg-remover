@@ -1,4 +1,5 @@
 import { assets } from "../assets/assets";
+import toast from "react-hot-toast";
 
 const Header = () => { 
     return  ( 
@@ -27,6 +28,7 @@ const Header = () => {
                         className="bg-black text-white font-medium px-8 py-4 rounded-full hover:opacity-90">
                             Upload your image
                     </label>
+                    <button onClick={() => toast.success("Toast working")}>Test toast notification</button>
                 </div>
             </div>
         </div>
