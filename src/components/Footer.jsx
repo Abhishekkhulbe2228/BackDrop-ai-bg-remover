@@ -7,7 +7,7 @@ const Footer = () => {
       <img src={assets.logo} alt="logo" width={32} />
 
       <p className="flex-1 border-l border-gray-100 max-sm:hidden">
-        &copy; {new Date().getFullYear()} @engineertalkswithbushan | All rights reserved.
+        &copy; {new Date().getFullYear()} @AbhishekKKhulbe| All rights reserved.
       </p>
 
       <div className="flex gap-3">
