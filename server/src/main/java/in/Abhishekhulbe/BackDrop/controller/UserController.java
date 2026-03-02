@@ -4,6 +4,7 @@ import in.Abhishekhulbe.BackDrop.dto.UserDTO;
 import in.Abhishekhulbe.BackDrop.response.BackDropResponse;
 import in.Abhishekhulbe.BackDrop.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,8 +19,16 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping
-    public BackDropResponse createOrUpdate(@RequestBody UserDTO userDTO) {
+    public BackDropResponse createOrUpdate(@RequestBody UserDTO userDTO, Authentication authentication) {
         try {
+
+            if(!authentication.getName().equals(userDTO.getClerkId())) {
+                return BackDropResponse.builder()
+                        .success(false)
+                        .data("User Unauthorized")
+                        .statusCode(HttpStatus.FORBIDDEN)
+                        .build();
+            }
             UserDTO user = userService.saveUser(userDTO);
             return BackDropResponse.builder()
                     .success(true)
